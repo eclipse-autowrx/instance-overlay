@@ -1,0 +1,4 @@
+[submodule "autowrx"]
+	path = autowrx
+	url = https://gitlab.eclipse.org/eclipse/autowrx/autowrx.git
+	branch = v2
