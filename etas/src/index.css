@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Define font weights as CSS variables */
+body {
+  font-family: "Manrope", sans-serif;
+  /* font-family: "Geist Variable"; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: Inter, sans-serif; */
+}
+
+/* Define colors as CSS variables */
+:root {
+  --da-primary-100: 219 74 90;
+  --da-primary-300: 219 74 51;
+  --da-primary-500: 219 74 33;
+
+  --da-accent-100: 36 100 85;
+  --da-accent-300: 36 100 65;
+  --da-accent-500: 36 100 50;
+
+  --da-white: 0 0 100;
+  --da-black: 0 0 0;
+  --da-gray-light: 220 9 46;
+  --da-gray-dark: 215 28 38;
+
+  --da-gradient-from: 219 74 33;
+  --da-gradient-to: 307 96 27;
+}
+
+/*********** Font size and weight ********************/
+.da-txt-small {
+  font-size: 14px;
+}
+
+.da-txt-regular {
+  font-size: 16px;
+}
+
+.da-txt-medium {
+  font-size: 18px;
+}
+
+.da-txt-large {
+  font-size: 20px;
+}
+
+.da-txt-huge {
+  font-size: 24px;
+}
+
+/*********** For Text Component ********************/
+
+.da-label-regular {
+  @apply da-txt-regular font-medium;
+}
+
+.da-label-regular-bold {
+  @apply da-txt-regular font-bold;
+}
+
+.da-label-small {
+  @apply da-txt-small font-medium;
+}
+
+.da-label-small-bold {
+  @apply da-txt-small font-bold;
+}
+
+.da-label-sub-title {
+  @apply da-txt-medium font-bold;
+}
+
+.da-label-title {
+  @apply da-txt-large font-bold;
+}
+
+.da-label-huge {
+  @apply da-txt-huge;
+}
+
+.da-label-huge-bold {
+  @apply da-txt-huge font-bold;
+}
+
+/*********** For Button Component ********************/
+.da-btn {
+  @apply select-none cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50;
+}
+
+.da-btn-solid {
+  @apply bg-da-primary-500 text-da-white shadow hover:bg-da-primary-500/90;
+}
+
+.da-btn-outline {
+  @apply border text-da-primary-500 border-da-primary-500 shadow-sm hover:bg-da-primary-500/10;
+}
+
+.da-btn-outline-nocolor {
+  @apply border text-da-gray-dark border-da-gray-dark/10 hover:bg-da-gray-dark/10;
+}
+
+.da-btn-plain {
+  @apply text-da-gray-dark hover:bg-da-primary-100;
+}
+
+.da-btn-text {
+  @apply text-da-primary-500 hover:underline;
+}
+
+.da-btn-link {
+  @apply text-da-gray-dark hover:underline;
+}
+
+.da-btn-gradient {
+  @apply bg-gradient-to-r from-da-gradient-from to-da-gradient-to text-da-white shadow-sm hover:opacity-90;
+}
+
+.da-btn-secondary {
+  @apply bg-da-gray-dark text-da-white shadow-sm hover:bg-da-gray-dark/80;
+}
+
+.da-btn-sm {
+  @apply h-8 rounded-md px-2 py-1 da-txt-small;
+}
+
+.da-btn-md {
+  @apply h-10 rounded-md px-3 py-1 da-txt-regular;
+}
+
+.da-btn-lg {
+  @apply h-12 rounded-md px-3 py-1 da-txt-medium;
+}
+
+/*********** For Block Component ********************/
+.da-block-bare {
+  @apply px-4 py-2 flex items-center justify-center;
+}
+
+.da-block-default {
+  @apply text-white bg-da-primary-500;
+}
+
+.da-block-outline {
+  @apply text-da-primary-500 border border-da-primary-500;
+}
+
+/*********** NAV BAR ********************/
+.da-nav-bar {
+  height: 56px;
+  max-height: 56px;
+  @apply px-2 md:px-4 py-2 flex items-center w-full;
+}
+
+.da-nav-bar-logo {
+  height: 25px;
+}
+
+/*********** Popup ********************/
+.da-popup-placeholder {
+  display: contents;
+}
+
+.da-popup-inner {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  padding: 20px;
+  outline: none !important;
+  border-radius: 10px;
+  max-height: 100vh;
+  overflow: auto;
+}
