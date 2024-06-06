@@ -39,7 +39,7 @@ const instance = {
     },
   ],
   text: {
-    home_ads_pan_title: "Welcome to ETAS playground for virtual exploration",
+    home_ads_pan_title: "Welcome to COVESA playground for virtual exploration",
     home_ads_pan_desc: `To support shift-level testing for software-defined vehicle (SDV) applications, we have created the digital.auto playground. This is a cloud-based, rapid prototyping environment for new, <b>SDV-enabled features</b>. The prototypes are built against real-world vehicle APIs and can be seamlessly migrated to automotive runtimes, such as Eclipse Velocitas. The playground is open and free to use.`,
   },
 };

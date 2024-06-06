@@ -61,25 +61,25 @@
 
 /* Define font weights as CSS variables */
 body {
-  font-family: "Manrope", sans-serif;
+  /* font-family: "Manrope", sans-serif; */
   /* font-family: "Geist Variable"; */
   /* font-family: "Roboto", sans-serif; */
-  /* font-family: Inter, sans-serif; */
+  font-family: Inter, sans-serif;
 }
 
 /* Define colors as CSS variables */
 :root {
-  --da-primary-100: 219 74 90;
-  --da-primary-300: 219 74 51;
-  --da-primary-500: 219 74 33;
+  --da-primary-100: 211 45 90;
+  --da-primary-300: 211 45 51;
+  --da-primary-500: 211 45 33;
 
-  --da-secondary-100: 307 96 92;
-  --da-secondary-300: 307 96 51;
-  --da-secondary-500: 307 96 27;
+  --da-secondary-100: 186 100 92;
+  --da-secondary-300: 186 100 51;
+  --da-secondary-500: 186 100 27;
 
-  --da-accent-100: 307 96 92;
-  --da-accent-300: 307 96 51;
-  --da-accent-500: 307 96 27;
+  --da-accent-100: 186 100 92;
+  --da-accent-300: 186 100 51;
+  --da-accent-500: 186 100 27;
 
   --da-white: 0 0 100;
   --da-black: 0 0 0;
@@ -88,8 +88,8 @@ body {
   --da-gray-dark: 217 33 17;
   --da-destructive: 0 84 60;
 
-  --da-gradient-from: 219 74 33;
-  --da-gradient-to: 307 96 27;
+  --da-gradient-from: 211 45 37;
+  --da-gradient-to: 186 100 38;
 }
 
 .col-span-2 {
