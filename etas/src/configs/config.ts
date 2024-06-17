@@ -12,6 +12,7 @@ const config: Config = {
   instanceLogo:
     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Etas-logo-blue-new.svg/512px-Etas-logo-blue-new.svg.png?20231004120207",
   instance: "etas",
+  defaultModelId: "665826e3194aff003dd2f67b",
   genAI: {
     defaultEndpointUrl: "https://intermediate.digitalauto.tech/v1/genai",
     marketplaceUrl: "https://store-be.digitalauto.tech/marketplace/genai",
@@ -37,6 +38,7 @@ const config: Config = {
         customPayload: (prompt: string) => ({ prompt }),
       },
     ],
+    widget: [],
   },
 };
 

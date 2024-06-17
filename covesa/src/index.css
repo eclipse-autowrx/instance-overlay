@@ -61,7 +61,7 @@
 
 /* Define font weights as CSS variables */
 body {
-  /* font-family: "Manrope", sans-serif; */
+  /* font-family: 'Manrope', sans-serif; */
   /* font-family: "Geist Variable"; */
   /* font-family: "Roboto", sans-serif; */
   font-family: Inter, sans-serif;
@@ -106,6 +106,22 @@ body {
 
 .col-span-5 {
   grid-column: span 5 / span 5;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-span-4 {
+  grid-row: span 4 / span 4;
+}
+
+.row-span-5 {
+  grid-row: span 5 / span 5;
 }
 
 .da-clickable {
@@ -189,7 +205,7 @@ body {
 }
 
 .da-btn-outline-nocolor {
-  @apply border text-da-gray-medium border-da-gray-medium/10 hover:bg-da-gray-medium/10 shadow;
+  @apply border text-da-gray-medium border-da-gray-light hover:bg-da-gray-medium/10 shadow;
 }
 
 .da-btn-plain {
@@ -213,7 +229,7 @@ body {
 }
 
 .da-btn-destructive {
-  @apply text-da-destructive hover:bg-da-destructive/10;
+  @apply text-da-gray-medium hover:text-da-destructive hover:bg-da-destructive/10;
 }
 
 .da-btn-sm {
