@@ -4,6 +4,8 @@ const config: Config = {
   serverBaseUrl:
     import.meta.env.VITE_SERVER_BASE_URL || "http://localhost:8080",
   serverVersion: import.meta.env.VITE_SERVER_VERSION || "v2",
+  cacheBaseUrl:
+    import.meta.env.VITE_CACHE_BASE_URL || "https://cache.digitalauto.tech",
   studioUrl: "https://studio.digital.auto",
   studioBeUrl: "https://bewebstudio.digitalauto.tech",
   widgetMarketPlaceUrl: "https://marketplace.digital.auto/packagetype/widget",
