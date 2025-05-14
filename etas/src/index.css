@@ -1,3 +1,11 @@
+/* Copyright (c) 2025 Robert Bosch GmbH. */
+/* */
+/* This program and the accompanying materials are made available under the */
+/* terms of the MIT License which is available at */
+/* https://opensource.org/licenses/MIT. */
+/* */
+/* SPDX-License-Identifier: MIT */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
